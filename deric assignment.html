@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <form action="">
+        Username:<input type="text" placeholder="Enter your name" id="deric1"><br><br>
+        Email:<input type="text" placeholder="Enter your plae" id="deric2"><br><br>
+        <button onclick="check()">Submit</button>
+    </form>
+
+</body>
+
+</html>
+<script>
+    function check() {
+        const x = document.getElementById("deric1").value;
+        const y = document.getElementById("deric2").value;
+        if (x.trim() === '' || y.trim() === '') {
+            alert('fill in all required field.');
+            return false;
+        } else {
+            alert('required field are not empty');
+            return true;
+        };
+    }
+
+</script>
